@@ -1,0 +1,23 @@
+{
+  "name": "gluup-api",
+  "version": "0.1.1",
+  "description": "backend for gluup crm",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fawazsullia/gluup-api.git"
+  },
+  "author": "fawaz sullia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fawazsullia/gluup-api/issues"
+  },
+  "homepage": "https://github.com/fawazsullia/gluup-api#readme",
+  "dependencies": {
+    "@types/node": "^17.0.35",
+    "typescript": "^4.7.2"
+  }
+}
