@@ -21,6 +21,8 @@
   "homepage": "https://github.com/fawazsullia/gluup-api#readme",
   "dependencies": {
     "@types/node": "^17.0.35",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "pg": "^8.7.3"
   },

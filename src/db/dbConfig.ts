@@ -1,6 +1,6 @@
 const pg = require("pg");
-
-const connectionString = "random";
+const devConnString = `postgresql://gluupadmin:kenkaneki13@localhost:5432/gluup`
+const connectionString = process.env.NODE_ENV === "production" ? "" : devConnString;
 
 const client = new pg.Client(connectionString);
 const pool = new pg.Pool(connectionString);
