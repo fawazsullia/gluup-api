@@ -2,7 +2,9 @@ const PORT = process.env.PORT || 5000;
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const configs = require("./configs")
+const configs = require("./configs");
+const authRoutes = require("../routes/authRoutes")
+
 
 //dependencies
 app.use(cors(configs.corsConfig))
@@ -11,12 +13,13 @@ app.use(cors(configs.corsConfig))
 
 
 //middlewares
-
+app.use(express.json())
 
 
 
 
 //routes
+app.use("/api/auth", authRoutes)
 
 
 
