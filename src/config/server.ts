@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const configs = require("./configs");
 const authRoutes = require("../routes/authRoutes")
+const cookieParser = require("cookie-parser")
 
 
 //dependencies
@@ -14,6 +15,7 @@ app.use(cors(configs.corsConfig))
 
 //middlewares
 app.use(express.json())
+app.use(cookieParser())
 
 
 
